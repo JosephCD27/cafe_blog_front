@@ -2,7 +2,7 @@
     --fuenteHeding: 'PT Sans', sans-serif;
     --fuenteParrafos: 'Open Sans', sans-serif;
 
-    --primario: #784D3C;
+    --primario: #5b3526;
     --secundario:#ffaa00;
     --grisoscuro: #8f8f8f;
     --grisclaro: #e1e1e1;
@@ -31,6 +31,7 @@ body {
     max-width: 120rem;
     width: 90%;
     margin: 0 auto; /* para centrar el cotenido horizontalmente en la pantalla */
+    padding: 1rem;
 }
 
 a {
@@ -234,8 +235,10 @@ img{
 /* cursos */
 
 .curso{
-    padding: 3rem 0;
-    border-bottom: 1px solid var(--grisclaro);
+    padding: 3rem;
+    border: 1px solid var(--grisoscuro);
+    border-radius: 2rem;
+    margin: 2rem;
 }
 
 @media (min-width: 768px) {
@@ -268,14 +271,17 @@ img{
 
 .contacto-background{
     background-image: url(../img/contacto.jpg);
-    height: 40rem;
+    height: 60rem;
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 1rem;
 }
 
 .formulario {
+    border: 1px solid var(--grisoscuro);
+    border-radius: 1rem ;
     background-color: var(--blanco);
-    margin: -5rem auto 0 auto;
+    margin: -55rem auto 5rem auto;
     width: 95%;
     padding: 5rem;
 }
@@ -289,18 +295,38 @@ img{
     flex: 0 0 9rem;
     text-align: right;
     padding-right: 2rem;
+    color: var(--primario);
+    font-weight: 700;
 }
 
 .campo__field {
     flex: 1;
-    border: 1px solid var(--grisclaro);
+    border: 2px solid var(--primario);
 }
 
 .campo__field--textarea{
     height: 20rem;
 }
 
-.entrada__imagen picture img{
+.campo__field--textarea,
+.campo__field {
+    border-radius: .5rem;
+    padding: 5px;
+}
+
+.inicio__imagen picture img{
     border: 2px solid var(--grisoscuro);
     border-radius: 3rem;
+}
+
+.curso__imagen img{
+    border: 1px solid var(--grisoscuro);
+    border-radius: 5rem;
+    height: 60rem;
+}
+
+.entrada__imagen{
+    margin: 0 auto;
+    border: 1px solid var(--grisoscuro);
+    border-radius: 5rem;
 }
